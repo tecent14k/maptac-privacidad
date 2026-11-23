@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MapTac · Política de privacidad</title>
+<meta name="description" content="Política de privacidad de la aplicación MapTac.">
+<style>
+  :root { --bg: #0b1016; --card: #121a22; --text: #e8edf2; --muted: #9aa7b5; --accent: #8fd47a; --line: #24303c; }
+  @media (prefers-color-scheme: light) { :root { --bg: #f5f7f9; --card: #ffffff; --text: #1a222b; --muted: #55616d; --accent: #2f7d32; --line: #dde3e9; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { padding: 24px; margin-bottom: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; }
+  h1 { margin: 0 0 6px; font-size: 28px; }
+  h2 { margin: 32px 0 8px; font-size: 19px; color: var(--accent); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 14px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { padding: 8px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Política de privacidad de MapTac</h1>
+    <p class="muted">Aplicación MapTac (Android <code>es.maptac.app</code>, Windows y web), publicada por EmisB.<br>
+    Última actualización: 24 de noviembre de 2026.</p>
+  </header>
+
+  <h2>Resumen</h2>
+  <ul>
+    <li>MapTac no tiene cuentas de usuario, ni publicidad, ni analítica de uso, ni servidor propio.</li>
+    <li>Tu ubicación, marcas, dibujos, recorridos, proyectos y ajustes se guardan <strong>sólo en tu dispositivo</strong>.</li>
+    <li>El desarrollador no recibe ni almacena tus datos, salvo lo que tú decidas enviar por correo a soporte.</li>
+  </ul>
+
+  <h2>Datos que la aplicación usa en tu dispositivo</h2>
+  <table>
+    <tr><th>Dato</th><th>Para qué</th><th>Dónde queda</th></tr>
+    <tr><td>Ubicación precisa y aproximada</td><td>Mostrar tu posición, navegar, medir y grabar recorridos cuando lo pides.</td><td>En el dispositivo. No se envía a MapTac.</td></tr>
+    <tr><td>Recorridos en segundo plano (Android)</td><td>Seguir grabando un recorrido que tú inicias, con la pantalla apagada, mediante un servicio con notificación visible.</td><td>En el dispositivo, cifrado con una clave del Android Keystore.</td></tr>
+    <tr><td>Sensores de orientación</td><td>Orientar la brújula.</td><td>No se guardan.</td></tr>
+    <tr><td>Receptores GNSS por Bluetooth o USB</td><td>Leer posiciones NMEA de un receptor externo que tú conectas.</td><td>Se procesan en el dispositivo.</td></tr>
+    <tr><td>Marcas, dibujos, proyectos, capas importadas y mapas descargados</td><td>Tu trabajo cartográfico.</td><td>En el dispositivo o en la tarjeta SD que elijas.</td></tr>
+    <tr><td>Huella o datos biométricos</td><td>Desbloquear la protección si la activas.</td><td>Los gestiona Android; MapTac nunca recibe tu huella.</td></tr>
+    <tr><td>Registro de errores (Diagnóstico)</td><td>Ayudarte a informar de fallos.</td><td>En el dispositivo. Sólo sale si tú lo envías.</td></tr>
+  </table>
+
+  <h2>Conexiones a servicios de terceros</h2>
+  <p>Para mostrar mapas que no tienes guardados, la aplicación pide teselas cartográficas a:</p>
+  <ul>
+    <li><strong>Instituto Geográfico Nacional / CNIG</strong> (ortofotos, mapas topográficos y relieve).</li>
+    <li><strong>OpenFreeMap</strong> (mapa vectorial con datos de OpenStreetMap).</li>
+    <li>Los servicios WMS, WMTS o XYZ que <strong>tú añadas</strong> en Mapas propios.</li>
+  </ul>
+  <p>Esas peticiones no incluyen tu posición GPS, tus proyectos ni tus nombres, pero, como cualquier conexión a
+  Internet, el proveedor recibe tu dirección IP y la zona del mapa que consultas. Cada proveedor aplica su propia
+  política. Puedes evitar estas conexiones descargando antes los mapas y activando el <strong>modo sin conexión estricto</strong>.</p>
+
+  <h2>Soporte por correo</h2>
+  <p>Si escribes a <a href="mailto:maptac26@gmail.com">maptac26@gmail.com</a>, la aplicación abre tu programa de correo
+  con una plantilla. Tú decides qué escribir y adjuntar. Recibimos tu dirección de correo y lo que nos envíes, y lo usamos
+  sólo para atender tu consulta. El correo se aloja en Gmail (Google).</p>
+
+  <h2>Compartir y vender datos</h2>
+  <p>MapTac no vende ni comparte datos personales con terceros, y no muestra publicidad.</p>
+
+  <h2>Seguridad</h2>
+  <p>Puedes activar la protección con contraseña (y huella en Android): los datos se cifran con AES-256-GCM y la clave
+  se deriva con Argon2id. Los proyectos exportados y las copias de seguridad pueden cifrarse con su propia contraseña.
+  Con la protección activa, Android impide capturas de pantalla de la aplicación.</p>
+
+  <h2>Conservación y eliminación</h2>
+  <p>Los datos permanecen en tu dispositivo hasta que los borras desde la aplicación, usas el borrado de emergencia,
+  borras los datos de la aplicación o la desinstalas. Los archivos que exportes quedan donde los guardes y se eliminan desde allí.</p>
+
+  <h2>Menores</h2>
+  <p>MapTac está dirigida a personas mayores de 18 años y no está diseñada para niños.</p>
+
+  <h2>Tus derechos</h2>
+  <p>Como no guardamos tus datos, la mayoría de derechos (acceso, rectificación, supresión) los ejerces directamente en
+  tu dispositivo. Para cualquier consulta sobre privacidad o sobre correos que nos hayas enviado, escribe a
+  <a href="mailto:maptac26@gmail.com">maptac26@gmail.com</a>.</p>
+
+  <h2>Cambios</h2>
+  <p>Si esta política cambia, se actualizará esta página y su fecha.</p>
+</main>
+</body>
+</html>
